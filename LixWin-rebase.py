@@ -4,7 +4,7 @@ client = boto3.client('ec2', region_name='us-east-1')  # You can change region a
 
 response = client.run_instances(
     ImageId='ami-00a929b66ed6e0de6',
-    InstanceType='t2.medium', # CPU changed from micro to medium
+    InstanceType='t2.large', # CPU changed from micro to large by Linux dev
     KeyName='USKEY1',
     MinCount=1,
     MaxCount=1
